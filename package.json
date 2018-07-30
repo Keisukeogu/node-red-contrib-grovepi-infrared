@@ -8,7 +8,7 @@
   },
   "node-red": {
     "nodes": {
-      "infrared-sensor": "sample.js"
+      "infrared-sensor": "sample2.js"
     }
   },
   "repository": {
