@@ -1,0 +1,28 @@
+<script type="text/javascript">
+    RED.nodes.registerType('infrared-sensor',{
+        category: 'input',
+        color: '#89c3eb',
+        defaults: {
+      gpioPin: {value:"",validate:RED.validators.number()},
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "serial.png",
+        label: function() {
+            return this.name||"infrared-sensor";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="infrared-sensor">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="infrared-sensor">
+    <p>A simple node that converts the message payloads into all lower-case characters</p>
+</script>
+
