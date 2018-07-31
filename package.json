@@ -20,7 +20,7 @@
     "grovepi"
   ],
   "dependencies": {
-   "pigpio": "^1.1.0"
+   "pigpio": "^1.1.2"
  },
   "author": "keisukeoguri",
   "license": "Apache-2.0",
