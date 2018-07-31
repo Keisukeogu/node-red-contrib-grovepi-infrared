@@ -7,14 +7,12 @@ module.exports = function(RED){
 
     console.log("gpioPin is" + this.gpioPin);
     var node = this;
-    var timer;
 //
     var Gpio = require('pigpio').Gpio;
     infrared = new Gpio(node.gpioPin,{mode: Gpio.OUTPUT});
-    let dutyCycle = 0;
+
 
   node.on('input', function(input_msg) {
-    var timer;
     var msg = new Object();
     if(input_msg == 0){
       msg.payload = "true";
